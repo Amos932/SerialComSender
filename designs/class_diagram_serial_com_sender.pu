@@ -1,0 +1,32 @@
+@startuml
+
+title Class Diagram SerialComSender
+
+class SerialClient {
++ void intitializeSerialCom()
++ void runSerialCom()
+}
+
+class SerialConfigData {
+- const int message_size
+- const char COM_PORT
+- HANDLE serialComHandler
+- const int baudrate
+- const int amountOfDataBits
+}
+
+class SerialLowLevelDriver {
+
++ void installSerialDriver(HANDLE hCom, wchar_t COMPORT, int nComRate, int nComBits, COMMTIMEOUTS, timeout)
++ void purgePort(HANDLE hCom)
++ int sendMessage(HANDLE serialComHandler, LPCVOID message, DWORD message_size)
++ DWORD receiveMessage(HANDLE hCom, LPVOID buf, DWORD szBuf)
++ int connectSerialPort(HANDLE hCom, const char COMPORT)
++ int configureSerialCommunication(HANDLE hCom, int nComRate, int nComBits, COMMTIMEOUTS timeout)
+}
+
+SerialConfigData -- SerialClient
+SerialClient -- SerialLowLevelDriver
+
+
+@enduml
