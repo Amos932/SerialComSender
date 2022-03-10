@@ -92,6 +92,6 @@ int connectSerialPort(HANDLE* hCom, const char* COMPORT);
  * 
  * @return int                  Return 1 if the function is succesfully executed.
  */
-static int configureSerialCommunication(HANDLE* hCom, int nComRate, int nComBits, COMMTIMEOUTS timeout);
+int configureSerialCommunication(HANDLE* hCom, int nComRate, int nComBits, COMMTIMEOUTS timeout);
 
 #endif
