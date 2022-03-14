@@ -36,6 +36,6 @@ In this chapter we are going to look at several diagrams for having a better und
 ## Class Diagram
 ![Class Diagram](resources/media/class_diagram_serial_com_sender.png)
 
-##Sequence Diagram
+## Sequence Diagram
 ![Sequence Diagram](resources/media/sequence_diagram_serial_com_sender.png)
 
