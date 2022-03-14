@@ -30,3 +30,9 @@ Serial communication based on the UART protocol for connecting different microco
 
 *./uart_protocol_pc*
 
+# Software Diagrams 
+In this chapter we are going to look at several diagrams for having a better understanding how it is implemented.
+
+## Class Diagram
+![Class Diagram](resources/media/class_diagram_serial_com_sender.png)
+
